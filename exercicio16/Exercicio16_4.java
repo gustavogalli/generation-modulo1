@@ -49,7 +49,7 @@ public class Exercicio16_4 {
 		System.out.println("PESSOAS CALMAS: " + pessoasCalmas);
 		System.out.println("MULHERES NERVOSAS: " + mulheresNervosas);
 		System.out.println("HOMENS AGRESSIVOS: " + homensAgressivos);
-		System.out.println("OUTROS CALMOS: " + outrosCalmos); // ajustar
+		System.out.println("OUTROS CALMOS: " + outrosCalmos);
 		System.out.println("PESSOAS NERVOSAS COM MAIS DE 40 ANOS: " + pessoasNervosasMais40);
 		System.out.println("PESSOAS CALMAS COM MENOS DE 18 ANOS: " + pessoasCalmasMenos18);
 		
