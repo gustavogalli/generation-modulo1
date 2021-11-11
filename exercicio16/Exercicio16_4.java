@@ -19,19 +19,26 @@ public class Exercicio16_4 {
 		int pessoasCalmas = 0, mulheresNervosas = 0, homensAgressivos = 0, outrosCalmos = 0, pessoasNervosasMais40 = 0,
 				pessoasCalmasMenos18 = 0;
 
-		while (contador <= 150) {
-			System.out.println("Qual sua idade? ");
-			idade = in.nextInt();
-			System.out.println("Qual seu sexo?\n[1] Masculino\n[2] Feminino\n[3] Outros");
-			sexo = in.nextInt();
-			System.out.println("Escolha abaixo: \n[1] Calmo(a)\n[2] Nervoso(a)\n[3] Agressivo(a)");
-			estado = in.nextInt();
+		while (contador < 150) {
+			do {
+				System.out.println("Qual sua idade? ");
+				idade = in.nextInt();
+			} while(idade < 0);
 			
-			if(estado == 1) {
+			do {
+				System.out.println("Qual seu sexo?\n[1] Masculino\n[2] Feminino\n[3] Outros");
+				sexo = in.nextInt();				
+			} while (sexo > 3 || sexo < 1);
+			do {
+				System.out.println("Escolha abaixo: \n[1] Calmo(a)\n[2] Nervoso(a)\n[3] Agressivo(a)");
+				estado = in.nextInt();
+			} while (estado > 3 || estado < 1);
+
+			if (estado == 1) {
 				pessoasCalmas++;
-				if(idade < 18) {
+				if (idade < 18) {
 					pessoasCalmasMenos18++;
-				} 
+				}
 				if (sexo == 3) {
 					outrosCalmos++;
 				}
@@ -42,8 +49,9 @@ public class Exercicio16_4 {
 			} else if (idade > 40 && estado == 2) {
 				pessoasNervosasMais40++;
 			}
-			
+
 			contador++;
+
 		}
 
 		System.out.println("PESSOAS CALMAS: " + pessoasCalmas);
@@ -52,7 +60,7 @@ public class Exercicio16_4 {
 		System.out.println("OUTROS CALMOS: " + outrosCalmos);
 		System.out.println("PESSOAS NERVOSAS COM MAIS DE 40 ANOS: " + pessoasNervosasMais40);
 		System.out.println("PESSOAS CALMAS COM MENOS DE 18 ANOS: " + pessoasCalmasMenos18);
-		
+
 		in.close();
 	}
 }
