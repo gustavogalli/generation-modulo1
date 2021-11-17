@@ -36,7 +36,7 @@ public class Exercicio17_2 {
 			for (int coluna = 0; coluna < 4; coluna++) {
 				somatoria += total[linha][coluna];
 			}
-			System.out.println("MÉDIA ALUNO " + (linha + 1) + ": " + somatoria / notas);
+			System.out.println("MÉDIA ALUNO " + (linha + 1) + ": " + somatoria / 4);
 			somatoria = 0;
 		}
 

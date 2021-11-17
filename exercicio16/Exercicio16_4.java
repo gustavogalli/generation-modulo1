@@ -19,7 +19,7 @@ public class Exercicio16_4 {
 		int pessoasCalmas = 0, mulheresNervosas = 0, homensAgressivos = 0, outrosCalmos = 0, pessoasNervosasMais40 = 0,
 				pessoasCalmasMenos18 = 0;
 
-		while (contador < 150) {
+		while (contador < 1) {
 			do {
 				System.out.println("Qual sua idade? ");
 				idade = in.nextInt();
