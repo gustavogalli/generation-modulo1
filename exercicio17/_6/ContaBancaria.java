@@ -1,4 +1,4 @@
-package exercicio18._6;
+package exercicio17._6;
 
 public class ContaBancaria {
 

@@ -1,4 +1,4 @@
-package exercicio18._2;
+package exercicio17._2;
 
 public class Aviao {
 

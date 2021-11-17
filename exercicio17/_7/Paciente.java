@@ -1,4 +1,4 @@
-package exercicio18._7;
+package exercicio17._7;
 
 public class Paciente {
 
